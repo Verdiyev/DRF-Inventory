@@ -2,7 +2,7 @@
 How to setup:
 1. Make sure you have Docker on your machine
 2. Clone repo
-3. run following command in root directory (same as docker-compose.yaml):
+3. Run following command in root directory (same as docker-compose.yaml):
   ```shell
   docker-compose build
   ```
@@ -10,4 +10,4 @@ How to setup:
   ```shell
   docker-compose up
   ```
-4. go to your browser and check API in /api/ with port 8001 for inventory microservice and 8002 for reporting
+4. Go to your browser and check API in /api/ with port 8001 for inventory microservice and 8002 for reporting
