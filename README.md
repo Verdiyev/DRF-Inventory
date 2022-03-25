@@ -1,6 +1,6 @@
 # DRF-Inventory
 
-DRF_Inventory is an implmentation of imaginary store inventory that accepts orders. This project hhas a microservice architecture and is done using Django Rest Framework.
+DRF_Inventory is an implmentation of imaginary store inventory that accepts orders. This project microservice based web applicationthat is implemented via Django Rest Framework.
 
 How to setup:
 1. Make sure you have Docker on your machine and all the necessary [requirements](https://github.com/Verdiyev/DRF-Inventory/blob/master/inventory/requirements.txt).
