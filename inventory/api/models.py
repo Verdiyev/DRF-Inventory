@@ -13,7 +13,7 @@ ORDER_STATUS_CHOICES = (
 
 class Product (models.Model):
     id = models.AutoField(primary_key=True)
-    product_name = models.CharField(max_length = 100)
+    product_name = models.CharField(max_length = 100, blank=False)
     cost = models.FloatField()
     price = models.FloatField()
     qty_left = models.PositiveIntegerField(default=0)

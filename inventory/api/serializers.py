@@ -8,6 +8,8 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = '__all__'
     def update(self, instance, validated_data):
+        if instance.product_name and instance.product_name != validated_data.get('product_name', instance.product_name):
+            raise ValidationError("Product name is immutable")
         instance.cost = validated_data.get('cost', instance.cost)
         instance.price = validated_data.get('price', instance.price)
         instance.qty_left = validated_data.get('qty_left', instance.qty_left)
