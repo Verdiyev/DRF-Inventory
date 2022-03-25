@@ -1,6 +1,6 @@
 # DRF-Inventory
 How to setup:
-1. Make sure you have Docker on your machine
+1. Make sure you have Docker on your machine and all the necessary [requirements](https://github.com/Verdiyev/DRF-Inventory/blob/master/inventory/requirements.txt).
 2. Clone repo
 3. Run following command in root directory (same as docker-compose.yaml):
   ```shell
