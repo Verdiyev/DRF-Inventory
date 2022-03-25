@@ -1,7 +1,15 @@
 from rest_framework.response import Response
+from rest_framework.decorators import api_view 
 from .models import Order
 from .serializers import OrderSerializer
-from rest_framework.decorators import api_view 
+
+
+@api_view(['GET', ])
+def apiOverview(request):
+    api_urls = {
+        'Get metrics in date range' : 'POST /metrics/',
+    }
+    return Response(api_urls)
 
 @api_view(['POST'])
 def report(request):
